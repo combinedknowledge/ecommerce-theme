@@ -1,0 +1,27 @@
+header.navbar-default {
+    .navbar-brand-logo {
+        width: auto;
+        height: $logo-height;
+    }
+
+    .navbar-nav {
+        .nav-link,
+        li > a {
+            &:hover,
+            &:focus {
+                background-color: $brand-primary-accent;
+            }
+        }
+    }
+}
+
+nav.administration-navbar div a {
+    color: $brand-primary;
+
+    &.selected,
+    &:active,
+    &:focus,
+    &:hover {
+        border-bottom-color: $brand-primary-accent;
+    }
+}

@@ -1,0 +1,7 @@
+input,
+select {
+    &.form-control:focus {
+        border-color: $brand-primary-accent-light;
+        box-shadow: inset 0 1px 1px rgba(#000, .075), 0 0 8px rgba($brand-primary-accent-light, 0.6);
+    }
+}

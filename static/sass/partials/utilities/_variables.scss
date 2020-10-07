@@ -1,0 +1,13 @@
+@import 'ecommerce/static/sass/partials/utilities/variables';
+
+// brand color
+$base-color: #c94944;
+
+// logo
+$logo-height: 40px;
+
+// general color variables
+$brand-primary:                 $base-color;
+$brand-primary-accent:          lighten($brand-primary, 12%);
+$brand-primary-accent-light:    lighten($brand-primary, 28%);
+
