@@ -1,0 +1,107 @@
+#app,
+#main {
+    background: transparent;
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    > div {
+        border: 2px solid #cacaca;
+        padding: 15px;
+        background: #fff;
+    }
+    
+    ol.breadcrumb {
+        margin-top: 0;
+        padding-left: 15px;
+    }
+    
+    .page-header {
+        margin-top: 15px;
+        
+        .hd-1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            .btn {
+                display: block;
+            }
+        }
+    }
+    
+    .dataTables_wrapper {
+        > .row:nth-child(2) > div {
+            overflow-x: auto;
+            
+            @media (max-width: 767px) {
+                margin: 0 15px;
+                padding: 0;
+            }
+            
+            .table {
+                min-width: 500px;
+                
+                @media (max-width: 767px) {
+                    white-space: nowrap;
+                }
+            }
+        }
+        
+        .dataTables_info {
+            white-space: normal;
+        }
+        
+        .dataTables_filter input[type="search"] {
+            width: auto;
+        }
+    }
+    
+    .dataTables_length {
+        @media (min-width: 768px) {
+            margin-top: 7px;
+        }
+    }
+    
+    .course-create-edit-view {
+        .course-form-outer .fields {
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        
+        .form-group {
+            @media (max-width: 767px) {
+                overflow: hidden;
+            }
+            
+            .table {
+                @media (max-width: 767px) {
+                    display: block;
+                    overflow: auto;
+                    white-space: nowrap;
+                }
+            }
+        }
+        
+        .course-form-view .form-actions {
+            margin-top: 40px;
+        }
+    }
+    
+    .form-actions {
+        .btn {
+            margin: 5px 0;
+        }
+    }
+}
