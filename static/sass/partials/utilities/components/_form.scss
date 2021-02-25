@@ -2,18 +2,18 @@ input,
 select {
     &.form-control:focus {
         border-color: $brand-primary-accent-light;
-        box-shadow: inset 0 1px 1px rgba(#000, .075), 0 0 8px rgba($brand-primary-accent-light, 0.6);
+        box-shadow: inset 0 1px 1px rgba(#000, .075), 0 0 8px rgba($brand-primary-accent-light, .6);
     }
 }
 
 input[type="search"] {
     @extend .form-control, .input-sm;
-    
+
     &.field-input,
     &.form-control {
         &:focus {
             border-color: $brand-primary-accent-light;
-            box-shadow: inset 0 1px 1px rgba(#000, .075), 0 0 8px rgba($brand-primary-accent-light, 0.6);
+            box-shadow: inset 0 1px 1px rgba(#000, .075), 0 0 8px rgba($brand-primary-accent-light, .6);
         }
     }
 }
