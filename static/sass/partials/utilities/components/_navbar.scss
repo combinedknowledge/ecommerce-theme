@@ -1,30 +1,30 @@
 header.navbar {
     border-bottom: none;
     box-shadow: 0 0 6px 0 rgba(#000, .75);
-    
+
     .navbar-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
-        
+
         &:before,
         &:after {
             display: none;
         }
-        
+
         .navbar-brand {
             margin: 0;
             height: auto;
             padding: 20px 15px;
             border: none;
-            
+
             .navbar-brand-logo,
             .navbar-brand-app {
                 position: static;
                 transform: none;
             }
-            
+
             .navbar-brand-logo {
                 margin: 5px 10px 5px 0;
                 width: auto;
@@ -32,7 +32,7 @@ header.navbar {
             }
         }
     }
-    
+
     .navbar-nav {
         .nav-link,
         li > a {
@@ -51,16 +51,16 @@ nav.administration-navbar {
     background: transparent;
     border-bottom: none;
     margin-top: 10px;
-    
+
     > .container {
         display: flex;
         align-items: flex-start;
         background: transparent;
-        
+
         a {
             white-space: nowrap;
             color: $brand-primary;
-            
+
             &.selected,
             &:active,
             &:focus,
