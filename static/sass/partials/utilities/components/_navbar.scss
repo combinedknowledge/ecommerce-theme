@@ -2,6 +2,19 @@ header.navbar {
     border-bottom: none;
     box-shadow: 0 0 6px 0 rgba(#000, .75);
 
+    .container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+
     .navbar-header {
         display: flex;
         align-items: center;
@@ -18,6 +31,10 @@ header.navbar {
             height: auto;
             padding: 20px 15px;
             border: none;
+
+            @media screen and (min-width: 768px) {
+                padding: 20px 0;
+            }
 
             .navbar-brand-logo,
             .navbar-brand-app {
@@ -40,6 +57,18 @@ header.navbar {
             &:focus {
                 background-color: $brand-primary-accent;
             }
+        }
+    }
+
+    .user-menu {
+        margin: 0;
+    }
+
+    .navbar-toggle {
+        &:hover,
+        &:focus {
+            border-color: $base-color;
+            background-color: $base-color;
         }
     }
 }
