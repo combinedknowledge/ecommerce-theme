@@ -1,0 +1,50 @@
+#main-content .basket {
+    .container {
+        .basket-items {
+            .row .checkout-quantity {
+                display: block;
+            }
+
+            .input-group-btn-vertical {
+                .btn {
+                    background: #efefef;
+                    border: 1px solid #ccc;
+                }
+
+                i {
+                    color: #434242;
+                }
+            }
+        }
+
+        .total,
+        #summary {
+            #basket_totals {
+                color: $base-color;
+            }
+        }
+    }
+
+    #apply-voucher-button {
+        position: relative;
+        top: -2px;
+    }
+
+    #apply-voucher-button,
+    #payment-button {
+        background: $base-color;
+        color: white;
+
+        &:hover,
+        &.is-hovered,
+        &:focus,
+        &.is-focused {
+            border-color: $brand-primary-accent;
+            background: $brand-primary-accent;
+        }
+    }
+}
+
+.basket-client-side .title {
+    color: $base-color !important;
+}

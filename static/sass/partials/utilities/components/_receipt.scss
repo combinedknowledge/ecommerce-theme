@@ -1,0 +1,23 @@
+#receipt-container.receipt {
+    .nav-wizard #verify_now_button {
+        border: none;
+    }
+
+    .nav-link {
+        &:active,
+        &:hover,
+        &:focus {
+            border-bottom: 1px dotted $base-color;
+        }
+    }
+
+    a,
+    h2,
+    .order-headers {
+        color: $base-color;
+    }
+
+    .action-primary {
+        color: #fff;
+    }
+}
